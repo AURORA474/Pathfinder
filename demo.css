@@ -1,0 +1,61 @@
+/* 引入网络字体（Montserrat） */
+@import url("http://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap");
+*{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    /* 100%窗口高度 */
+    height: 100vh;
+    background: url("/images/dongyu.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*溢出隐藏 */
+    overflow: hidden;
+    /* 禁止文本被选取 */
+    user-select: none;
+    
+  }
+
+
+  .fireworks-canvas, .word-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: lighten;
+  }
+
+  .word-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+
+  .word-canvas {
+    will-change: transform;
+  }
+
+  .year{
+    font-size: 12vw;
+    color: #750303;
+    /* 字体设置为上面引入的字体 */
+    font-family: Montserrat;
+    font-weight: 700;
+    /* 字间距 */
+    text-align: center;
+    letter-spacing: 15px;
+}
+.greetings{
+    color: #750303;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 10px;
+}
